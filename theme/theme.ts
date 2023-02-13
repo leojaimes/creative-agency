@@ -24,21 +24,9 @@ export const theme = createTheme({
 
     },
     typography: {
-        // fontFamily:
-        //     [
-        //         themePalete.FONT_GLOBAL,
-        //         "AvenirLTStd-Book",
-        //         "AvenirLTStd-Black",
-        //         "AvenirLTStd-Medium",
-        //         "CooperHewitt-Medium",
-        //         "BebasNeue-Regular",
-        //         "Segoe-UI-Bold",
-        //         "Segoe-UI",
-        //     ].join(','),
-
         h2: {
             fontSize: '24px',
-            fontFamily: 'Segoe-UI',
+            fontFamily: 'Montserrat',
             lineHeight: 'normal',
             color: 'black',
             [breakPoints.up('md')]: {
@@ -48,7 +36,7 @@ export const theme = createTheme({
 
         h3: {
             fontSize: '20px',
-            fontFamily: 'AvenirLTStd-Book',
+            fontFamily: 'Montserrat',
             lineHeight: 'normal',
             color: 'white',
             [breakPoints.up('md')]: {
