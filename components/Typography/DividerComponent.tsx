@@ -19,6 +19,7 @@ export const DividerComponent = () => {
                 variant="middle"
                 sx={{ backgroundColor: '#219EBC', borderBottomWidth: 5, my: '50px' }}
             />
+            <Divider sx={{ my: '50px' }}>Center</Divider>
         </Box>
     )
 }
