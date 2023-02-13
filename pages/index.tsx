@@ -1,7 +1,8 @@
 import { Button, Stack } from "@mui/material";
 import Head from "next/head";
 import Image from "next/image";
-import { CustomButton, FCustomButton, MuiButton } from "components";
+import { MuiTypoGraphy } from "components";
+
 
 export default function Home() {
   return (
@@ -18,9 +19,11 @@ export default function Home() {
           Custom Button{" "}
         </CustomButton>
         <FCustomButton bgColor="#FF7377" txtColor="black"></FCustomButton>
+
+        <MuiButton></MuiButton>
         */
       }
-      <MuiButton></MuiButton>
+      <MuiTypoGraphy></MuiTypoGraphy>
     </>
   );
 }
