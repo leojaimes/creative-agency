@@ -1,32 +1,40 @@
-import { Button, Stack } from "@mui/material"
+import { Box, Button, Stack } from "@mui/material"
 
 import AddTaskIcon from '@mui/icons-material/AddTask';
 import { minHeight } from "@mui/system";
 
 
-export const MuiButton = ()=> {
+export const MuiButton = () => {
     return (
         <>
-            <Button
-                sx= {{
+            <Box
+                sx={{
                     backgroundColor: '#BCF4F5',
                     minHeight: '100vh'
                 }}
             >
-                <AddTaskIcon></AddTaskIcon>
-            </Button>
-            <Stack
-                sx= {{
-                    width: '200px',
-                    margin: 'auto',
+                {/*<AddTaskIcon></AddTaskIcon>*/}
 
-                }}
-                spacing={1}
-            >
-                <Button>simple</Button>
-            </Stack>
-           
+                <Stack
+                    sx={{
+                        width: '200px',
+                        margin: 'auto',
+
+                    }}
+                    spacing={1}
+                >
+                    <Button>simple</Button>
+                    <Button variant="contained">Contaained</Button>
+                    <Button variant="outlined">outlined</Button>
+                    <Button disabled>Disabled</Button>
+                    <Button href="https://google.com">
+                        Google
+                    </Button>
+                    <Button variant="text" onClick={() => { alert('ButtonClicked') }}>
+                        Clicked!!
+                    </Button>
+                </Stack>
+            </Box>
         </>
-       
     )
 }
