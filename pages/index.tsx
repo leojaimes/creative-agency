@@ -1,7 +1,7 @@
 import { Button, Stack } from "@mui/material";
 import Head from "next/head";
 import Image from "next/image";
-import { PapperComponent } from "components";
+import { DividerComponent } from "components";
 
 
 export default function Home() {
@@ -23,7 +23,7 @@ export default function Home() {
         <MuiButton></MuiButton>
         */
       }
-      <PapperComponent></PapperComponent>
+      <DividerComponent></DividerComponent>
     </>
   );
 }
