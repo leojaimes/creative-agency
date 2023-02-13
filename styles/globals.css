@@ -72,3 +72,10 @@ a {
   src: url("/fonts/segoe-ui/Segoe-UI.ttf") format("opentype");
   font-display: swap;
 }
+
+@font-face {
+  font-family: "Montserrat";
+  font-display: auto;
+  src: url("/fonts/montserrat/Montserrat.ttf") format("opentype");
+  font-display: swap;
+}

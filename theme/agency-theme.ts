@@ -25,18 +25,6 @@ export const theme = createTheme({
 
     },
     typography: {
-        // fontFamily:
-        //     [
-        //         themePalete.FONT_GLOBAL,
-        //         "AvenirLTStd-Book",
-        //         "AvenirLTStd-Black",
-        //         "AvenirLTStd-Medium",
-        //         "CooperHewitt-Medium",
-        //         "BebasNeue-Regular",
-        //         "Segoe-UI-Bold",
-        //         "Segoe-UI",
-        //     ].join(','),
-
         h2: {
             fontFamily: 'Montserrat, sans-serif',
             fontStyle: 'normal',
@@ -46,18 +34,27 @@ export const theme = createTheme({
             color: '#000000',
             [breakPoints.up('md')]: {
 
+                fontSize: '64px',
+                lineHeight: '78px',
             }
         },
 
-        h3: {
-            fontSize: '20px',
-            fontFamily: 'AvenirLTStd-Book',
-            lineHeight: 'normal',
-            color: 'white',
+        body1: {
+            fontFamily: 'Montserrat, sans-serif',
+            fontStyle: 'normal',
+            fontWeight: '400',
+            fontSize: '14px',
+            lineHeight: '17px',
+            color: '#686868',
             [breakPoints.up('md')]: {
                 fontSize: '24px',
+                lineHeight: '29px',
+                fontWeight: '500',
             }
         },
+
+
+
     }
 
 
