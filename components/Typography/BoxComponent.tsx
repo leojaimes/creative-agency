@@ -40,6 +40,43 @@ export const BoxComponent = () => {
                         span!!
                     </Box>
                     <Box component='img' src={spongeBobUrl}></Box>
+                    <Box sx={{ display: 'flex', flexDirection: 'row', }}
+                    >
+                        {
+                            [1, 2, 3, 4, 5].map((_, index) => (
+                                <Box key={`${index} sponge`}>
+                                    <Box
+                                        component='img'
+                                        src={spongeBobUrl}
+                                        sx={{ maxHeight: '50px' }}
+                                    >
+                                    </Box>
+                                </Box>
+
+                            ))
+                        }
+
+
+                    </Box>
+
+                    <Box sx={{ display: 'flex', flexDirection: 'column', }}
+                    >
+                        {
+                            [1, 2, 3, 4, 5].map((_, index) => (
+                                <Box key={`${index} sponge`}>
+                                    <Box
+                                        component='img'
+                                        src={spongeBobUrl}
+                                        sx={{ maxHeight: '50px' }}
+                                    >
+                                    </Box>
+                                </Box>
+
+                            ))
+                        }
+
+
+                    </Box>
                 </Stack>
 
             </Box>
