@@ -23,6 +23,7 @@ export const theme = createTheme({
     palette: {
 
     },
+    //ver styles.globals.css y _app.tsx desde alli se llaman las fonts
     typography: {
         h2: {
             fontSize: '24px',
