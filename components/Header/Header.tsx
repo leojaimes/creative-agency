@@ -1,12 +1,13 @@
 import { AppBar, Box, Container, IconButton, Toolbar, Typography } from "@mui/material"
 import AdbIcon from '@mui/icons-material/Adb';
 import { useState } from "react";
-import { CustomDrawer } from "components";
+import { CustomDrawer, Navbar } from "components";
 import { styles } from "./styles";
 import { theme } from 'theme';
 
-const logoDesktop = '/assets/img/logo_desk.svg'
-const logoMobile = '/assets/img/logo_desk.svg'
+
+const logoDesk = '/assets/img/logo_desk.svg'
+const logoMob = '/assets/img/logo_desk.svg'
 const burgerMenu = '/assets/img/logo_desk.svg'
 
 
@@ -29,7 +30,7 @@ export const Header = () => {
                 <Toolbar sx={styles.toolbar(theme)} disableGutters>
                     <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
                     <Typography sx={styles.logoDesk(theme)} component="a" href="/">
-                        <img src={logoDesktop} alt="logo"></img>
+                        <img src={logoDesk} alt="logo"></img>
                     </Typography>
 
                     <Box sx={{ flexGrow: 1, display: { xs: 'flex', lg: 'none' } }} >
@@ -37,9 +38,12 @@ export const Header = () => {
                             <img src={burgerMenu} alt="burgerMenu"></img>
                         </IconButton>
                     </Box>
-                    <Typography sx={styles.logoDesk(theme)} component="a" href="/">
-                        <img src={logoDesktop} alt="logo"></img>
+                    <Typography sx={styles.logoMob(theme)} component="a" href="/">
+                        <img src={logoMob} alt="logo"></img>
                     </Typography>
+                    <Box sx={{ flexGrow: 1, display: { xs: 'flex', lg: 'none' } }}>
+                        <Navbar></Navbar>
+                    </Box>
                 </Toolbar>
             </Container>
         </AppBar>

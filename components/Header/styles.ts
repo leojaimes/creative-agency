@@ -28,6 +28,9 @@ export const styles = {
 
     logoDesk: (theme: Theme): SxProps<Theme> | undefined => ({
 
+    }),
+    logoMob: (theme: Theme): SxProps<Theme> | undefined => ({
+
     })
 
 }
