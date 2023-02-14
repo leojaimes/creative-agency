@@ -13,6 +13,7 @@ export const styles = {
         "textAlign": "center",
         "textTransform": "capitalize",
         padding: '0 ',
-        color: '#000000'
+        color: '#000000',
+        marginBottom: '10px',
     })
 }
