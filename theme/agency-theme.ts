@@ -2,9 +2,14 @@ import { createTheme } from '@mui/material/styles'
 import createBreakpoints from '@mui/system/createTheme/createBreakpoints'
 
 
-export enum template {
+export enum colorsTemplate {
+    grey = '#686868',
     slateBlue = "#777FEB",
 
+}
+
+export enum fontsTemplate {
+    Montserrat = 'Montserrat, sans-serif'
 }
 
 
@@ -16,17 +21,18 @@ const breakPoints = createBreakpoints({
 export const theme = createTheme({
     palette: {
         primary: {
-            main: '#686868',
+            main: colorsTemplate.grey,
 
         },
         secondary: {
-            main: '#777FEB',
+            main: colorsTemplate.slateBlue,
         },
 
     },
     typography: {
+
         h2: {
-            fontFamily: 'Montserrat, sans-serif',
+            fontFamily: fontsTemplate.Montserrat,
             fontStyle: 'normal',
             fontWeight: '700',
             fontSize: '32px',
