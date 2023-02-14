@@ -26,7 +26,7 @@ export const CustomDrawer: FC<Props> = ({ open, onClose }) => {
                     <img src={closeIcon} alt='closeIcon'></img>
                 </IconButton>
                 <Box sx={{ padding: '44px' }}>
-
+                    <Navbar />
                 </Box>
             </Box>
 
