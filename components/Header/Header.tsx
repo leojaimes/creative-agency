@@ -19,9 +19,10 @@ export const Header = () => {
 
 
     return (
-        <AppBar position="static" sx={styles.AppBar(theme)}>
-            <Container maxWidth="xl">
-                <Toolbar disableGutters>
+        <AppBar sx={styles.appBar(theme)} position="static">
+            <Container sx={styles.container(theme)} maxWidth="xl" >
+                <CustomDrawer onClose={onClose} open={open}></CustomDrawer>
+                <Toolbar sx={styles.toolbar(theme)} disableGutters>
                     <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
                     <Typography
                         variant="h6"
