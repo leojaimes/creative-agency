@@ -1,14 +1,20 @@
-import { Button, Stack, Typography, Box } from '@mui/material';
-import { CustomButton } from 'components';
-import { Navbar } from 'components/Nabvar';
-import Head from "next/head";
-import Image from "next/image";
+import { Box } from '@mui/material';
+import { CustomDrawer } from 'components';
+import { useState } from 'react';
+
+
 
 
 export default function Home() {
+
+  const [open, setOpen] = useState(true)
+  const onClose = () => {
+    setOpen(false)
+  }
+
   return (
     <Box>
-      <Navbar></Navbar>
+      <CustomDrawer open={open} onClose={onClose} />
 
     </Box>
   );

@@ -1,5 +1,6 @@
 import { Box, Drawer } from '@mui/material'
 import IconButton from '@mui/material/IconButton'
+import { Navbar } from 'components/Nabvar';
 import { FC } from 'react'
 const closeIcon = '/assets/img/close.svg'
 interface Props {
@@ -17,9 +18,18 @@ export const CustomDrawer: FC<Props> = ({ open, onClose }) => {
             open={open}
             onClose={onClose}
         >
-            <IconButton aria-label="" >
+            <Box
+                sx={{ padding: '2px' }}
+            >
 
-            </IconButton>
+                <IconButton sx={{ padding: '0', marginLeft: '5px    ' }} onClick={onClose}>
+                    <img src={closeIcon} alt='closeIcon'></img>
+                </IconButton>
+                <Box sx={{ padding: '44px' }}>
+                    <Navbar />
+                </Box>
+            </Box>
+
         </Drawer>
     )
 }
