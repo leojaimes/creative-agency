@@ -24,6 +24,10 @@ export const styles = {
         [theme.breakpoints.up('md')]: {
 
         }
+    }),
+
+    logoDesk: (theme: Theme): SxProps<Theme> | undefined => ({
+
     })
 
 }

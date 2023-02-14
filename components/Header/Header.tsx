@@ -1,4 +1,4 @@
-import { AppBar, Container, Toolbar, Typography } from "@mui/material"
+import { AppBar, Box, Container, IconButton, Toolbar, Typography } from "@mui/material"
 import AdbIcon from '@mui/icons-material/Adb';
 import { useState } from "react";
 import { CustomDrawer } from "components";
@@ -16,6 +16,10 @@ export const Header = () => {
     const onClose = () => {
         setOpen(false)
     }
+    const onOpen = () => {
+        setOpen(true)
+    }
+
 
 
     return (
@@ -24,25 +28,18 @@ export const Header = () => {
                 <CustomDrawer onClose={onClose} open={open}></CustomDrawer>
                 <Toolbar sx={styles.toolbar(theme)} disableGutters>
                     <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
-                    <Typography
-                        variant="h6"
-                        noWrap
-                        component="a"
-                        href="/"
-                        sx={{
-                            mr: 2,
-                            display: { xs: 'none', md: 'flex' },
-                            fontFamily: 'monospace',
-                            fontWeight: 700,
-                            letterSpacing: '.3rem',
-                            color: 'inherit',
-                            textDecoration: 'none',
-                        }}
-                    >
-                        Logo
+                    <Typography sx={styles.logoDesk(theme)} component="a" href="/">
+                        <img src={logoDesktop} alt="logo"></img>
                     </Typography>
 
-                    <CustomDrawer open={open} onClose={onClose} />
+                    <Box sx={{ flexGrow: 1, display: { xs: 'flex', lg: 'none' } }} >
+                        <IconButton size="large" aria-label="menu" onClick={onOpen}>
+                            <img src={burgerMenu} alt="burgerMenu"></img>
+                        </IconButton>
+                    </Box>
+                    <Typography sx={styles.logoDesk(theme)} component="a" href="/">
+                        <img src={logoDesktop} alt="logo"></img>
+                    </Typography>
                 </Toolbar>
             </Container>
         </AppBar>
