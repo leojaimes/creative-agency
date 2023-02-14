@@ -2,6 +2,14 @@ import { AppBar, Container, Toolbar, Typography } from "@mui/material"
 import AdbIcon from '@mui/icons-material/Adb';
 import { useState } from "react";
 import { CustomDrawer } from "components";
+import { styles } from "./styles";
+import { theme } from 'theme';
+
+const logoDesktop = '/assets/img/logo_desk.svg'
+const logoMobile = '/assets/img/logo_desk.svg'
+const burgerMenu = '/assets/img/logo_desk.svg'
+
+
 export const Header = () => {
 
     const [open, setOpen] = useState(true)
@@ -11,7 +19,7 @@ export const Header = () => {
 
 
     return (
-        <AppBar position="static">
+        <AppBar position="static" sx={styles.AppBar(theme)}>
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
                     <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
@@ -30,6 +38,7 @@ export const Header = () => {
                             textDecoration: 'none',
                         }}
                     >
+                        Logo
                     </Typography>
 
                     <CustomDrawer open={open} onClose={onClose} />

@@ -1,10 +1,14 @@
+import { Theme, SxProps } from '@mui/system';
 
 
 export const styles = {
 
-    btn: () => ({
+    AppBar: (theme: Theme): SxProps<Theme> | undefined => ({
 
 
+        [theme.breakpoints.up('md')]: {
+
+        }
     }),
 
 }
