@@ -5,6 +5,7 @@ import createBreakpoints from '@mui/system/createTheme/createBreakpoints'
 export enum colorsTemplate {
     grey = '#686868',
     slateBlue = "#777FEB",
+    slateBlue2 = '#646AB0'
 
 }
 

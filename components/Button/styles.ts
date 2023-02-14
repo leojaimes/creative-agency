@@ -13,6 +13,9 @@ export const styles = {
         "height": "64px",
         "background": colorsTemplate.slateBlue,
         "borderRadius": "8px",
-        "fontStyle": "normal", "fontWeight": "700", "fontSize": "16px", "lineHeight": "20px", "textAlign": "center", "textTransform": "capitalize", "color": "#FFFFFF"
+        "fontStyle": "normal", "fontWeight": "700", "fontSize": "16px", "lineHeight": "20px", "textAlign": "center", "textTransform": "capitalize", "color": "#FFFFFF",
+        '&:hover': {
+            backgroundColor: colorsTemplate.slateBlue2
+        }
     })
 }
