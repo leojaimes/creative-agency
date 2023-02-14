@@ -50,7 +50,7 @@ export const Navbar = () => {
                 pages.map((page, index) => (
                     <Button
                         key={index}
-                        sx={styles.btn(theme)}
+                        sx={styles.btnLink(theme)}
                     >
                         {page.title}
                         {page.arrow && (
