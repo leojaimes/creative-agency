@@ -31,7 +31,11 @@ const listItem: SxProps<Theme> | undefined = {
     lineHeight: "20px",
     textTransform: "capitalize",
     color: colorsTemplate.grey,
-    [theme.breakpoints.up('md')]: {}
+    [theme.breakpoints.up('md')]: {
+        fontWeight: "500",
+        fontSize: "16px",
+        lineHeight: "20px",
+    }
 }
 
 

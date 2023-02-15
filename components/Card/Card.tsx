@@ -1,15 +1,12 @@
 import { Box, Button, Card, CardActionArea, CardActions, CardContent, List, ListItem, Typography } from '@mui/material';
 import React, { FC } from 'react'
 import { styles } from './styles';
+import { CardModel } from 'components/CreativeDesign';
 const arrowRight = '/assets/img/arrow-right.svg'
 
 
-interface Props {
-    title: string;
-    icon: string;
-    listItems: string[];
-}
-export const CustomCard: FC<Props> = ({ title, icon, listItems }) => {
+
+export const CustomCard: FC<CardModel> = ({ title, icon, listItems }) => {
     return (
         <Card sx={styles.card}>
             <CardContent sx={{ padding: 0, }}>
@@ -19,9 +16,9 @@ export const CustomCard: FC<Props> = ({ title, icon, listItems }) => {
                     {
                         listItems.map((item, index) => {
                             return (
-                                <ListItem key={index} sx={styles.listItem}>
-                                    <Box component='img' src={arrowRight}></Box>
-                                    <Typography>{item}</Typography>
+                                <ListItem sx={styles.listItem} key={index} >
+                                    <Box sx={{ marginRight: '3px' }} component='img' src={arrowRight}></Box>
+                                    <Typography sx={styles.listItem} >{item}</Typography>
                                 </ListItem>
                             )
                         })
