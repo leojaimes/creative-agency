@@ -1,17 +1,18 @@
 import { Box } from '@mui/material';
 import { Header, Hero, CustomCard, CreativeDesign } from 'components';
 import { useState } from 'react';
-import { CardModel } from '../components/CreativeDesign/CreativeDesign';
+import { CardModel } from 'components';
 
-
-
+const strategyIcon = '/assets/img/strategy.svg'
+const productIcon = '/assets/img/product-design.svg'
+const developmentIcon = '/assets/img/strategy.svg'
 
 export default function Home() {
 
   const cards: CardModel[] = [
     {
       title: 'strategy',
-      icon: '',
+      icon: strategyIcon,
       listItems: [
         "product manegment",
         "mpv definition",
@@ -20,7 +21,7 @@ export default function Home() {
     },
     {
       title: 'product design',
-      icon: '',
+      icon: productIcon,
       listItems: [
         "product manegment",
         "mpv definition",
@@ -29,7 +30,7 @@ export default function Home() {
     },
     {
       title: 'development',
-      icon: '',
+      icon: developmentIcon,
       listItems: [
         "product manegment",
         "mpv definition",
