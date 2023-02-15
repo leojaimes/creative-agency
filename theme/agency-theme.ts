@@ -53,6 +53,7 @@ export const theme = createTheme({
             fontSize: '14px',
             lineHeight: '17px',
             color: '#686868',
+
             [breakPoints.up('md')]: {
                 fontSize: '24px',
                 lineHeight: '29px',
