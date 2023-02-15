@@ -8,14 +8,19 @@ import { useState } from 'react';
 export default function Home() {
 
 
-
+  const strategySvg = '/assets/img/strategy.svg'
+  const listItems = [
+    "product manegment",
+    "mpv definition",
+    "product strategy"
+  ]
   return (
     <Box>
       {/**
     <Header />
       <Hero /> 
        */}
-      <CustomCard></CustomCard>
+      <CustomCard title={'Strategy'} icon={strategySvg} listItems={listItems}></CustomCard>
     </Box>
   );
 }

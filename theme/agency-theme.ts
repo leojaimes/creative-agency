@@ -38,6 +38,7 @@ export const theme = createTheme({
             fontWeight: '700',
             fontSize: '32px',
             lineHeight: '39px',
+            textTransform: 'capitalize',
             color: '#000000',
             [breakPoints.up('md')]: {
 
@@ -46,13 +47,29 @@ export const theme = createTheme({
             }
         },
 
+        h3: {
+            fontFamily: fontsTemplate.Montserrat,
+            fontStyle: "normal",
+            fontWeight: "700",
+            fontSize: "24px",
+            lineHeight: "29px",
+            textTransform: "capitalize",
+
+            [breakPoints.up('md')]: {
+
+
+            }
+        },
+
+
+
         body1: {
             fontFamily: 'Montserrat, sans-serif',
             fontStyle: 'normal',
             fontWeight: '400',
             fontSize: '14px',
             lineHeight: '17px',
-            color: '#686868',
+            color: colorsTemplate.grey,
 
             [breakPoints.up('md')]: {
                 fontSize: '24px',
