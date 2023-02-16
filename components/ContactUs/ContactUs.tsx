@@ -6,6 +6,7 @@ const photo_send = '/assets/img/photo_send_2.png'
 import MailOutlineIcon from '@mui/icons-material/MailOutline'
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone'
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos'
+import { CustomButton } from 'components/Button';
 
 export const ContactUs = () => {
     return (
@@ -44,9 +45,9 @@ export const ContactUs = () => {
                         placeholder='write message'
                         style={styles.textareaAutosize}
                     />
-                    <Button>
+                    <CustomButton>
                         send us message <ArrowForwardIosIcon />
-                    </Button>
+                    </CustomButton>
 
                 </Box>
                 <Box component='img' src={photo_send} sx={styles.photo} />
