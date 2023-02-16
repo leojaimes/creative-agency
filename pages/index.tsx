@@ -45,8 +45,9 @@ export default function Home() {
     <Header />
       <Hero /> 
        <CreativeDesign cards={cards} />
+        <Experience />
        */}
-      <Experience />
+
     </Box>
   );
 }

@@ -19,7 +19,7 @@ const links = [
 
 export const Experience = () => {
     return (
-        <Box sx={styles.experience}>
+        <Box sx={styles.experience} >
             <Box sx={styles.wrapper}>
                 <Typography variant="h2" color="initial">professional experience</Typography>
                 <Typography variant="h2" color="initial">professional design agency to provide solutions</Typography>
@@ -34,23 +34,23 @@ export const Experience = () => {
                         })
                     }
                 </Box>
-                <Grid container spacing={2}>
-                    <Grid item xs={4} sm={4}  >
+                <Grid container columns={{ xs: 12, sm: 6 * 2, md: 4 * 3 }} spacing={2} justifyContent='center'>
+                    <Grid item xs={12} sm={6} md={4}   >
                         <Box>
                             <Box component='img' src={dashboardPhoto} sx={styles.imgItem} />
                             <Typography sx={styles.contentTitle}>dashborad design</Typography>
                         </Box>
                     </Grid>
-                    <Grid item xs={4} sm={4}>
+                    <Grid item xs={12} sm={6} md={4} >
                         <Box>
                             <Box component='img' src={landingPagePhoto} sx={styles.imgItem} />
                             <Typography sx={styles.contentTitle}>landing pages</Typography>
                         </Box>
                     </Grid>
-                    <Grid item xs={4} sm={4}>
+                    <Grid item xs={12} sm={6} md={4} >
                         <Box>
                             <Box component='img' src={illustrationPagePhoto} sx={styles.imgItem} />
-                            <Typography sx={styles.contentTitle}>landing pages</Typography>
+                            <Typography sx={styles.contentTitle}>ilustration design</Typography>
                         </Box>
                     </Grid>
                 </Grid>
