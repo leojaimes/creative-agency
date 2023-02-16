@@ -19,6 +19,7 @@ const wrapper: SxProps<Theme> | undefined = {
         flexDirection: 'row',
         maxWidth: '1240px',
         alignItems: 'center',
+        gap: '120px',
     }
 
 }
