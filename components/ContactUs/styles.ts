@@ -1,4 +1,5 @@
 import { SxProps, Theme } from "@mui/material/styles"
+import { CSSProperties } from "react"
 
 const contactUs: SxProps<Theme> | undefined = {
 
@@ -33,6 +34,16 @@ const itemBlockInfo: SxProps<Theme> | undefined = {
 
 }
 
+const input: SxProps<Theme> | undefined = {
+
+}
+const textField: SxProps<Theme> | undefined = {
+
+}
+
+const textareaAutosize: CSSProperties | undefined = {
+
+}
 
 export const styles = {
     contactUs,
@@ -44,4 +55,7 @@ export const styles = {
     titleInfo,
     imgInfo,
     titleValue,
+    input,
+    textField,
+    textareaAutosize,
 }

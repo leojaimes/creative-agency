@@ -1,4 +1,4 @@
-import { Box, Typography } from '@mui/material'
+import { Box, Button, TextareaAutosize, TextField, Typography } from '@mui/material'
 import { styles } from './styles';
 
 const photo_send = '/assets/img/photo_send_2.png'
@@ -34,6 +34,20 @@ export const ContactUs = () => {
                             <Box sx={styles.titleValue}>+012 (345) 67 89</Box>
                         </Box>
                     </Box>
+                    <Box sx={styles.input}>
+                        <TextField placeholder='Full name' sx={styles.textField} />
+                        <TextField placeholder='Email address' sx={styles.textField} />
+                    </Box>
+
+                    <TextareaAutosize
+                        minRows={6}
+                        placeholder='write message'
+                        style={styles.textareaAutosize}
+                    />
+                    <Button>
+                        send us message <ArrowForwardIosIcon />
+                    </Button>
+
                 </Box>
                 <Box component='img' src={photo_send} sx={styles.photo} />
             </Box>
