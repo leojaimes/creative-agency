@@ -1,5 +1,5 @@
 import { Box } from '@mui/material';
-import { Header, Hero, CustomCard, CreativeDesign, Experience } from 'components';
+import { Header, Hero, CustomCard, CreativeDesign, Experience, ContactUs } from 'components';
 import { useState } from 'react';
 import { CardModel } from 'components';
 
@@ -47,7 +47,7 @@ export default function Home() {
        <CreativeDesign cards={cards} />
         <Experience />
        */}
-
+      <ContactUs />
     </Box>
   );
 }
