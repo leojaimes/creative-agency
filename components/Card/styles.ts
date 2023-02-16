@@ -5,7 +5,7 @@ const card: SxProps<Theme> | undefined = {
     textAlign: 'left',
     boxSizing: "border-box",
     padding: "44px",
-    width: "403px",
+    //width: "403px",
     background: "#FFFFFF",
     border: `0.5px solid ${colorsTemplate.slateBlue}`,
     boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.2)",

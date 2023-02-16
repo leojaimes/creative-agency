@@ -5,7 +5,7 @@ import { CardModel } from 'components';
 
 const strategyIcon = '/assets/img/strategy.svg'
 const productIcon = '/assets/img/product-design.svg'
-const developmentIcon = '/assets/img/strategy.svg'
+const developmentIcon = '/assets/img/development.svg'
 
 export default function Home() {
 
